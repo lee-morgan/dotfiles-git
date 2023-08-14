@@ -89,7 +89,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
     border-bottom: 4px solid rgba(0,0,0,0.3);
 }
 

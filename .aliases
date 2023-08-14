@@ -1,0 +1,117 @@
+# aliases
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias back='cd $OLDPWD'
+alias cls='clear'
+alias cd..='cd ..'
+
+# get disk usage without other fs's
+alias df='df -h -x squashfs -x tmpfs -x devtmpfs'
+
+# get my external ip
+alias extip='curl icanhazip.com'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Play audio files in current dir by type
+alias playwav='deadbeef *.wav'
+alias playogg='deadbeef *.ogg'
+alias playmp3='deadbeef *.mp3'
+
+# Play video files in current dir by type
+alias playavi='vlc *.avi'
+alias playmov='vlc *.mov'
+alias playmp4='vlc *.mp4'
+
+# Changing "ls" to "exa"
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+
+# make free more readable
+alias free='free -m'
+
+# list mountpoints
+alias lsmount='mount |column -t | sort '
+
+# create a new directory and parent paths if required
+alias mkdir='mkdir -pv'
+
+# list all open ports
+alias ports='netstat -tulanp'
+
+# list job id's
+alias j='jobs -l'
+
+# perform a speedtest
+alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
+
+# can't remember what this does.
+alias ssha='eval $(ssh-agent) && ssh-add'
+
+# watch a directory for changes and highlight the differences
+alias watch='watch -d'
+
+#get local weather in the terminal
+alias weather='curl wttr.in'
+
+# continue file download
+alias wget='wget -c'
+
+## get top process eating memory
+alias mem5='ps auxf | sort -nr -k 4 | head -5'
+alias mem10='ps auxf | sort -nr -k 4 | head -10'
+
+## get top process eating cpu ##
+alias cpu5='ps auxf | sort -nr -k 3 | head -5'
+alias cpu10='ps auxf | sort -nr -k 3 | head -10'
+
+## List largest directories (aka "ducks")
+alias dir5='du -cksh * | sort -hr | head -n 5'
+alias dir10='du -cksh * | sort -hr | head -n 10'
+
+# Safetynets
+# do not delete / or prompt if deleting more than 3 files at a time #
+alias rm='rm -I --preserve-root'
+
+# confirmation #
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias ln='ln -iv'
+
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+# git
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias stat='git status'  # 'status' is protected name so using 'stat' instead
+alias tag='git tag'
+alias newtag='git tag -a'
+
+# Although this is a git alias i have separated it from the rest because it's special :)
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+# reload bash config
+alias reload="source ~/.bashrc"
+
+# Manage packages easier
+if [ -f /usr/bin/apt ]; then
+  alias update='sudo apt update'
+  alias upgrade='sudo apt update && sudo apt dist-upgrade && sudo apt autoremove && sudo apt clean'
+  alias install='sudo apt install'
+fi

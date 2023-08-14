@@ -1,0 +1,64 @@
+env:
+  TERM: xter-256color
+window:
+  padding:
+    x: 6
+    y: 6
+  dynamic_padding: false
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 1
+  decorations: none
+  dimensions:
+    columns: 80
+    lines: 24
+scrolling:
+  history: 5000
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style:  Regular
+  bold:
+    family: JetBrainsMono Nerd Font
+    style:  Bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style:  Italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  size: 12
+draw_bold_text_with_bright_colors: true
+
+dynamic_title: true
+
+import: 
+  - ~/.config/alacritty/dracula.yml
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /bin/bash
+
+key_bindings:
+  - { key: Return,    mods: Super|Shift,   action: SpawnNewInstance            }
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: Paste,     mods: None,          action: Paste                       }
+  - { key: Copy,      mods: None,          action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }

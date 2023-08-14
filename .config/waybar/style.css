@@ -5,6 +5,7 @@
 }
 
 window#waybar {
+    margin-top: 5px;
     background-color: transparent;
     color: #ffffff;
     transition-property: background-color;

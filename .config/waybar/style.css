@@ -5,7 +5,6 @@
 }
 
 window#waybar {
-    margin-top: 5px;
     background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
@@ -88,7 +87,6 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    margin-top: 5px;
     padding: 0 10px;
     color: #ffffff;
     border-radius: 8px;

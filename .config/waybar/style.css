@@ -200,7 +200,6 @@ label:focus {
     	animation-duration: 10s;
     	animation-timing-function: linear;
     	animation-iteration-count: infinite;
-    	animation-direction: alternate;
 }
 
 #network.disconnected {

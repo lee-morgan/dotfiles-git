@@ -146,10 +146,10 @@ button:hover {
 
 @keyframes gradient {
 	from {
-		background-position: 0 200px;
+		background-position: 0% 200%;
 	}
 	to {
-		background-position: 400px 200px;
+		background-position: 400% 200%;
 	}
 }
 

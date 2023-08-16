@@ -195,7 +195,12 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+/*     background-color: #2980b9; */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    	animation-name: gradient;
+    	animation-duration: 15s;
+    	animation-timing-function: ease;
+    	animation-iteration-count: infinite;
 }
 
 #network.disconnected {

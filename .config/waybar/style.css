@@ -90,7 +90,7 @@ button:hover {
 	margin-top: 10px;
     padding: 0 10px;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /* #window,
@@ -103,14 +103,15 @@ button:hover {
     background-color: rgba(11, 234, 45, 0.5);
     margin: 0 4px;
     padding: 0 5px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 #window {
+	margin-top: 10px;
     background-color: rgba(11, 234, 45, 0.5);
     margin: 0 4px;
     padding: 0 5px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

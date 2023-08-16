@@ -71,6 +71,19 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 #clock,
 #battery,
 #cpu,
@@ -90,6 +103,11 @@ button:hover {
     padding: 0 10px;
     color: #ffffff;
     border-radius: 8px;
+		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    	animation-name: gradient;
+    	animation-duration: 15s;
+    	animation-timing-function: ease;
+    	animation-iteration-count: infinite;
 }
 
 /* #window,
@@ -122,7 +140,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+/*     background-color: #64727D; */
     margin-right: 5px;
     border-radius: 8px;
 }
@@ -144,17 +162,6 @@ button:hover {
     }
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
@@ -165,7 +172,7 @@ button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
+/* 
 label:focus {
     background-color: #000000;
 }
@@ -230,8 +237,8 @@ label:focus {
     background-color: #66cc99;
     color: #2a5c45;
     min-width: 100px;
-}
-
+} */
+/* 
 #custom-media.custom-spotify {
     background-color: #66cc99;
 }
@@ -250,7 +257,7 @@ label:focus {
 
 #tray {
     background-color: #2980b9;
-}
+} */
 
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -271,7 +278,7 @@ label:focus {
     border-radius: 100%;
 }
 
-#mpd {
+/* #mpd {
     background-color: #66cc99;
     color: #2a5c45;
 }
@@ -286,7 +293,7 @@ label:focus {
 
 #mpd.paused {
     background-color: #51a37a;
-}
+} */
 
 #language {
     background: #00b093;

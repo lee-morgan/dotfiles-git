@@ -178,7 +178,7 @@ label:focus {
 
 #memory {
 /*     background-color: #9b59b6; */
-	background-clor: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     	animation-name: gradient;
     	animation-duration: 15s;
     	animation-timing-function: ease;

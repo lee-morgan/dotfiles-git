@@ -1,9 +1,10 @@
-font-size=24 
+font=JetBrainsMono Nerd Font
+font-size=64 
 clock
 timestr=%H:%M:%S
 datestr=%d/%m/%Y
 indicator-idle-visible
-indicator-radius=100
+indicator-radius=150
 indicator-thickness=10
 fade-in=4
 grace=10 

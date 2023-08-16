@@ -15,14 +15,12 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
 window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
     background-color: #FFFFFF;
 }
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -183,14 +181,8 @@ label:focus {
 }
 
 #memory {
-/*     background-color: #9b59b6; */
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    	animation-name: gradient;
-    	animation-duration: 15s;
-    	animation-timing-function: ease;
-    	animation-iteration-count: infinite;
-/* 	animation: gradient 15s ease infinite; */
-/* }
+    background-color: #9b59b6; 
+}
 
 #disk {
     background-color: #964B00;
@@ -201,13 +193,7 @@ label:focus {
 }
 
 #network {
-/*     background-color: #2980b9; */
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 300% 300%;
-    	animation-name: gradient;
-    	animation-duration: 15s;
-    	animation-timing-function: ease;
-    	animation-iteration-count: infinite;
+     background-color: #2980b9; 
 }
 
 #network.disconnected {
@@ -237,7 +223,7 @@ label:focus {
     background-color: #66cc99;
     color: #2a5c45;
     min-width: 100px;
-} */ */
+} 
 /* 
 #custom-media.custom-spotify {
     background-color: #66cc99;

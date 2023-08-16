@@ -146,12 +146,15 @@ button:hover {
 }
 
 @keyframes gradient {
-    from {
-        background-position: -33.941125497px 0;
-    }
-    to {
-        background-position: 0 0;
-    }
+	from {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	to {
+		background-position: 0% 50%;
+	}
 }
 
 #battery.critical:not(.charging) {

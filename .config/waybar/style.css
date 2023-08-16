@@ -102,6 +102,7 @@ button:hover {
     color: #ffffff;
     border-radius: 8px;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	backgroud-size: 300% 300%;
 	animation-name: gradient;
 	animation-duration: 15s;
 	animation-timing-function: ease;
@@ -170,7 +171,7 @@ button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-/* 
+
 label:focus {
     background-color: #000000;
 }
@@ -224,7 +225,7 @@ label:focus {
     color: #2a5c45;
     min-width: 100px;
 } 
-/* 
+ 
 #custom-media.custom-spotify {
     background-color: #66cc99;
 }
@@ -243,7 +244,7 @@ label:focus {
 
 #tray {
     background-color: #2980b9;
-} */
+} 
 
 #tray > .passive {
     -gtk-icon-effect: dim;

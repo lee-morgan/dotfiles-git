@@ -4,7 +4,7 @@ clock
 timestr=%H:%M:%S
 datestr=%d/%m/%Y
 indicator-idle-visible
-indicator-radius=150
+indicator-radius=175
 indicator-thickness=10
 fade-in=4
 grace=10 

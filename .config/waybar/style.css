@@ -87,7 +87,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 5px;
+    padding: 0 10px;
     color: #ffffff;
     border-radius: 8px;
 }
@@ -197,7 +197,7 @@ label:focus {
 /*     background-color: #2980b9; */
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     	animation-name: gradient;
-    	animation-duration: 15s;
+    	animation-duration: 10s;
     	animation-timing-function: linear;
     	animation-iteration-count: infinite;
     	animation-direction: alternate;

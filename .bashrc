@@ -1,10 +1,14 @@
 # This is my .bashrc file that has been butchered from several youtube creators
 
 # Load aliases file
-source ~/.aliases
+#source ~/.aliases
 
 # Load bash functions
-source ~/.bash_functions
+#source ~/.bash_functions
+
+[[ -f ~/.aliases ]] && . ~/.aliases
+[[ -f ~/.bash_styles ]] && . ~/.bash_styles
+[[ -f ~/.bash_functions ]] && . ~/.bash_functions
 
 ### Export useful environment variables
 export TERM=xterm-256color
@@ -70,27 +74,6 @@ case ${TERM} in
     PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
     ;;
 esac
-
-# Dracula theme colours for exa
-export EXA_COLORS="\
-uu=36:\
-gu=37:\
-sn=32:\
-sb=32:\
-da=34:\
-ur=34:\
-uw=35:\
-ux=36:\
-ue=36:\
-gr=34:\
-gw=35:\
-gx=36:\
-tr=34:\
-tw=35:\
-tx=36:"
-
-# Dracula theme for fzf
-export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
 ### Comment out if using sharship prompt (below)
 #export PS1="\[\033[38;5;2m\]┌────(\[\033[38;5;38m\]\u\[\033[38;5;2m\]::\[\033[38;5;38m\]\h\[\033[38;5;2m\])─[\[$(tput sgr0)\]\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[\033[38;5;2m\]]\n└─(\j)\\$ \[$(tput sgr0)\]"

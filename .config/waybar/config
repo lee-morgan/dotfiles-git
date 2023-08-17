@@ -2,30 +2,48 @@
     "layer": "top", 
     "position": "top", 
     "height": 30, 
-    // "width": 1280, // Waybar width
     "spacing": 5, 
 
-    "modules-left": ["wlr/workspaces", "custom/media"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "tray", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock"],
+    "modules-left": [
+        "wlr/workspaces", 
+        "custom/media"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+        "modules-right": [
+        "mpd", 
+        "idle_inhibitor", 
+        "tray", 
+        "pulseaudio", 
+        "network", 
+        "cpu", 
+        "memory", 
+        "temperature", 
+        "backlight", 
+        "keyboard-state", 
+        "battery", 
+        "clock"
+    ],
 
-     "wlr/workspaces": {
-         "on-scroll-up": "hyprctl dispatcher workspace e+1",
-         "on-scroll-down": "hyprctl dispatcher workspace e-1",
-         "all-outputs": true,
-         "warp-on-scroll": false,
-         "format": "{name}: {icon}",
-         "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
-     },
+    "wlr/workspaces": {
+        "on-scroll-up": "hyprctl dispatcher workspace e+1",
+        "on-scroll-down": "hyprctl dispatcher workspace e-1",
+        "on-click": "activate",
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

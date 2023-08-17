@@ -135,7 +135,8 @@ button:hover {
 
 #workspaces {
 	margin-top: 10px;
-    background-color: rgba(11, 234, 45, 0.5);
+	margin-bottom: 10px;
+/*     background-color: rgba(11, 234, 45, 0.5); */
     margin: 0 4px;
     padding: 0 5px;
     border-radius: 15px;
@@ -143,10 +144,18 @@ button:hover {
 
 #window {
 	margin-top: 10px;
+	margin-bottom: 10px;
     background-color: rgba(11, 234, 45, 0.5);
     margin: 0 4px;
     padding: 0 5px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    background: rgb(202,158,230);
+    background: linear-gradient(45deg, rgba(202,158,230,1) 0%, rgba(245,194,231,1) 43%, rgba(180,190,254,1) 80%, rgba(137,180,250,1) 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

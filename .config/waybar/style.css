@@ -145,8 +145,6 @@ button:hover {
 #window {
 	margin-top: 10px;
 	margin-bottom: 10px;
-    background-color: rgba(11, 234, 45, 0.5);
-    margin: 0 4px;
     padding: 0 5px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;

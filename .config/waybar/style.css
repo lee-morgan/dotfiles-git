@@ -1,7 +1,7 @@
-@import url("./colors.css");
 :root {
 	--button-radius: 15px;
 }
+@import url("./colors.css");
 
 * {
 	border: none;

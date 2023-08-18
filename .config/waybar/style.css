@@ -9,7 +9,8 @@
 }
 
 window#waybar {
-	background-color: transparent;
+/* 	background-color: transparent; */
+	background-color: @background-darker;
 	color: @foreground;
 	transition-property: background-color;
 	transition-duration: .5s;

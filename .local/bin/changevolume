@@ -1,28 +1,28 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 # Increment, decrement, or mute the volume and send a notification
 # of the current volume level.
 
 send_notification() {
-	volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+	volume=$(pamixer --get-volume)
 	dunstify -a "changevolume" -u low -r 9993 -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
 }
 
 case $1 in
 up)
 	# Set the volume on (if it was muted)
-	wpctl set-mute @DEFAULT_AUDIO_SINK@ 0
-	wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+	pamixer -u
+	pamixer -i 5 --allow-boost
 	send_notification "$1"
 	;;
 down)
-	wpctl set-mute @DEFAULT_AUDIO_SINK@ 0
-	wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+	pamixer -u
+	pamixer -d 5 --allow-boost
 	send_notification "$1"
 	;;
 mute)
-	wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle 
-	if eval "$(wpctl --get-volume @DEFAULT_AUDIO_SINK@ == *"Muted"*)"; then
+	pamixer -t
+	if eval "$(pamixer --get-mute)"; then
 		dunstify -a "changevolume" -t 2000 -r 9993 -u low -i "volume-mute" "Muted"
 	else
 		send_notification up

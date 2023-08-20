@@ -1,1 +1,1 @@
-polkit-kde-agent dunst fzf alacritty kitty pipewire-{jack,alsa,pulse} evtest brightnessctl bluez bluez-utils blueman sddm starship qt5-wayland qt6-wayland xdg-user-dirs swaync cliphist slurp jq swayidle tty-clock ttf-font-awesome imagemagick libnotify ranger
+polkit-kde-agent dunst fzf alacritty kitty pipewire-{jack,alsa,pulse} evtest brightnessctl bluez bluez-utils blueman sddm starship qt5-wayland qt6-wayland xdg-user-dirs swaync cliphist slurp jq swayidle tty-clock ttf-font-awesome imagemagick libnotify ranger pamixer

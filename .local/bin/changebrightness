@@ -5,7 +5,8 @@
 
 send_notification() {
 	brightness=$(brightnessctl get)
-	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: $brightness%" -t 2000
+	brightnessmax=$(brightnessctl max)
+	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: (($brightness / $brightnessmax) * 100)%" -t 2000
 }
 
 case $1 in

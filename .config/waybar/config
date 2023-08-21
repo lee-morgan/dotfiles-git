@@ -5,7 +5,7 @@
     "spacing": 5, 
 
     "modules-left": [
-        "wlr/workspaces", 
+        "hyprland/workspaces", 
         "custom/media"
     ],
     "modules-center": [
@@ -26,7 +26,7 @@
         "clock"
     ],
 
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "on-scroll-up": "hyprctl dispatcher workspace e+1",
         "on-scroll-down": "hyprctl dispatcher workspace e-1",
         "on-click": "activate",
@@ -44,6 +44,14 @@
             "default": ""
         }
     },
+    "hyprland/window": {
+        "format": "👉 {}",
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "🌎 $1",
+            "(.*) - kitty": "> [$1]"
+        },
+        "separate-outputs": true
+    }
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

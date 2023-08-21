@@ -9,7 +9,7 @@
 	],
 	"modules-left": [
 		"wlr/workspaces", 
-		"wlr/taskbar",
+		"hyprland/taskbar",
 		"custom/media"
 	],
 	"modules-center": [

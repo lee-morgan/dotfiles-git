@@ -3,7 +3,7 @@
 	"position": "top", 
 	"height": 30, 
 	"spacing": 5, 
-    "name": "main",
+	"name": "main",
 	"include": [
 		"~/.config/waybar/default-modules.json",
 	],

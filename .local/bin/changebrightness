@@ -4,18 +4,17 @@
 # and send a notification displaying the current brightness level after.
 
 send_notification() {
-	brightness=$(brightnessctl g | awk -F, '{print $4}' | tr -d)
-	#dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: (($brightness / $brightnessmax) * 100)%" -t 2000
-	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" "brightness-$brightness%" -t 2000
+	brightness=$(printf "%.0f\n" "$(brillo -G)")
+	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: $brightness%" -t 2000
 }
 
 case $1 in
 up)
-	brightnessctl set +10%
+	brillo -A 5 -q
 	send_notification "$1"
 	;;
 down)
-	brightnessctl set 10%-
+	brillo -U 5 -q
 	send_notification "$1"
 	;;
 esac

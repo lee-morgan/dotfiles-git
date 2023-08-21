@@ -5,7 +5,7 @@
     "spacing": 5, 
 
     "modules-left": [
-        "hyprland/workspaces", 
+        "wlr/workspaces", 
         "custom/media"
     ],
     "modules-center": [
@@ -26,7 +26,7 @@
         "clock"
     ],
 
-    "hyprland/workspaces": {
+    "wlr/workspaces": {
         "on-scroll-up": "hyprctl dispatcher workspace e+1",
         "on-scroll-down": "hyprctl dispatcher workspace e-1",
         "on-click": "activate",

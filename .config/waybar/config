@@ -14,7 +14,6 @@
         "modules-right": [
         "mpd", 
         "idle_inhibitor", 
-        "tray", 
         "pulseaudio", 
         "network", 
         "cpu", 
@@ -23,7 +22,9 @@
         "backlight", 
         "keyboard-state", 
         "battery", 
-        "clock"
+        "clock",
+        "bluetooth",
+        "tray"
     ],
 
     "wlr/workspaces": {

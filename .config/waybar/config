@@ -4,6 +4,7 @@
 	"height": 25, 
 	"spacing": 5, 
 	"name": "main",
+"margin-bottom":"-6"
 	"include": [
 		"~/.config/waybar/default-modules.json",
 	],

@@ -4,7 +4,7 @@
 # and send a notification displaying the current brightness level after.
 
 send_notification() {
-	brightness=$(brightnessctl -d mock_device g | awk -F, '{print $4}' | tr -d)
+	brightness=$(brightnessctl g | awk -F, '{print $4}' | tr -d)
 	#dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: (($brightness / $brightnessmax) * 100)%" -t 2000
 	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" "brightness-$brightness%" -t 2000
 }

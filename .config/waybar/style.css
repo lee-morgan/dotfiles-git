@@ -33,7 +33,7 @@ button {
     /* Avoid rounded borders under each button name */
     border: none; 
     border-radius: 0;
-	margin-top: 10px;
+	margin-top: 5px;
 /* 	margin-bottom: 10px; */
 }
 
@@ -60,7 +60,7 @@ button:hover {
 
 #workspaces{
     background-color: transparent;
-    margin-top: 10px;
+    margin-top: 5px;
 /*     margin-bottom: 10px; */
     margin-right: 10px;
     margin-left: 25px;
@@ -116,7 +116,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-	margin-top: 10px;
+	margin-top: 5px;
 /* 	margin-bottom: 10px; */
     padding: 0 10px;
     color: #ffffff;

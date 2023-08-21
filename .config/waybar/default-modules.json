@@ -21,7 +21,7 @@
            "HDMI-A-1": 3 // but only three on HDMI-A-1
      }
   },
-  "wlr/taskbar": {
+  "hyprland/taskbar": {
     "format": "{icon}",
     "icon-size": 14,
     "icon-theme": "Numix-Circle",

@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-l #!/bin/sh
-
-# Use brillo to logarithmically adjust laptop screen brightness
-# and send a notification displaying the current brightness level after.
-
-send_notification() {
-	brightness=$(brightnessctl get)
-	brightnessmax=$(brightnessctl max)
-	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness-$1" "Brightness: eval (($brightness / $brightnessmax) * 100)%" -t 2000
-}
-
-case $1 in
-up)
-	brightnessctl set +10%
-	send_notification "$1"
-	;;
-down)
-	brightnessctl set 10%-
-	send_notification "$1"
-	;;
-esac
-=======
 #!/bin/sh
 
 # Use brillo to logarithmically adjust laptop screen brightness
@@ -42,4 +19,3 @@ down)
 	send_notification "$1"
 	;;
 esac
->>>>>>> de4cd94 (Fix line ending)

@@ -75,7 +75,7 @@ button:hover {
     padding-bottom: 2px;
     padding-right: 10px;
     font-weight: bolder;
-    color: 	#cba6f7 ;
+    color: @foreground ;
 }
 
 #workspaces button.active{

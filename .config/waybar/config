@@ -9,6 +9,7 @@
 	],
 	"modules-left": [
 		"wlr/workspaces", 
+		"wlr/taskbar",
 		"custom/media"
 	],
 	"modules-center": [

@@ -20,23 +20,12 @@ window#waybar.hidden {
 	opacity: 0.2;
 }
 
-/*
 window#waybar.empty {
 	background-color: transparent;
-}
+} 
 window#waybar.solo {
-	background-color: #FFFFFF;
+	background-color: transparent;
 }
-*/
-
-/* window#waybar.termite {
-	background-color: #3F3F3F;
-} */
-
-/* window#waybar.chromium {
-	background-color: #000000;
-	border: none;
-} */
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -76,6 +65,7 @@ button:hover {
     margin-right: 10px;
     margin-left: 25px;
 }
+
 #workspaces button{
     box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
     background-color: #fff ;
@@ -127,20 +117,15 @@ button:hover {
 #scratchpad,
 #mpd {
 	margin-top: 10px;
-	margin-bottom: 10px;
+/* 	margin-bottom: 10px; */
     padding: 0 10px;
     color: #ffffff;
     border-radius: 15px;
 }
 
-/* #window,
-#workspaces {
-    margin: 0 4px;
-} */
-
 #workspaces {
 	margin-top: 10px;
-	margin-bottom: 10px;
+/* 	margin-bottom: 10px; */
 	/*     background-color: rgba(11, 234, 45, 0.5); */
 	margin: 0 4px;
 	padding: 0 5px;
@@ -149,7 +134,7 @@ button:hover {
 
 #window {
 	margin-top: 10px;
-	margin-bottom: 10px;
+/* 	margin-bottom: 10px; */
     padding: 0 5px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
@@ -311,9 +296,9 @@ label:focus {
 } */
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
+/*     background-color: #ecf0f1; */
     color: #2ecc71;
-    border-radius: 100%;
+/*     border-radius: 100%; */
 }
 
 #mpd {

@@ -1,5 +1,5 @@
 # dotfiles
-A collectioon of all my configuration files.
+A collection of all my configuration files.
 Currently a work in progress.
 
 

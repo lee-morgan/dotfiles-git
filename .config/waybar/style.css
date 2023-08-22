@@ -1,5 +1,9 @@
 @import url("./colors.css");
-
+/* 
+	margin/padding: top right bottom left
+	margin/padding: top left/right bottom
+	margin/padding: top/bottom left/right
+ */
 * {
 	border: none;
 	border-radius: 0;

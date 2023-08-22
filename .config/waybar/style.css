@@ -9,30 +9,25 @@
 }
 
 window#waybar {
-/* 	background-color: transparent; */
+	/* 	background-color: transparent; */
 	background-color: @orange;
 	color: @foreground;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
 
-window#waybar.hidden {
-	opacity: 0.2;
-}
-
+window#waybar.hidden, 
+window#waybar.solo, 
 window#waybar.empty {
-	background-color: transparent;
-} 
-window#waybar.solo {
 	background-color: transparent;
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none; 
-    border-radius: 0;
+	/* Use box-shadow instead of border so the text isn't offset */
+	box-shadow: inset 0 -3px transparent;
+	/* Avoid rounded borders under each button name */
+	border: none; 
+	border-radius: 0;
 	margin-top: 5px;
 	margin-bottom: 5px; 
 }
@@ -43,20 +38,9 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-/* #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
-} */
-
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
 }
-
-/* #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-} */
 
 #workspaces{
     background-color: transparent;
@@ -209,15 +193,9 @@ label:focus {
     color: #000000;
 }
 
-/* #memory {
+#memory {
 	background-color: #9b59b6;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 300% 300%;
-	animation-name: gradient;
-	animation-duration: 15s;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-} */
+} 
 
 #disk {
     background-color: #964B00;
@@ -227,15 +205,9 @@ label:focus {
     background-color: #90b1b1;
 }
 
-/* #network {
+#network {
 	background-color: #2980b9;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 300% 300%;
-	animation-name: gradient;
-	animation-duration: 15s;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-} */
+} 
 
 #network.disconnected {
     background-color: #f53c3c;
@@ -295,14 +267,13 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-/* #idle_inhibitor {
+#idle_inhibitor {
     background-color: #2d3436;
-} */
+}
 
 #idle_inhibitor.activated {
-/*     background-color: #ecf0f1; */
+	background-color: #ecf0f1;
     color: #2ecc71;
-/*     border-radius: 100%; */
 }
 
 #mpd {
@@ -322,14 +293,6 @@ label:focus {
     background-color: #51a37a;
 }
 
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
 #keyboard-state {
     background: #97e1ad;
     color: #000000;
@@ -344,12 +307,4 @@ label:focus {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
 }

@@ -71,8 +71,8 @@ button:hover {
     background: rgb(202,158,230);
 /*     background: linear-gradient(45deg, rgba(202,158,230,1) 0%, rgba(245,194,231,1) 43%, rgba(180,190,254,1) 80%, rgba(137,180,250,1) 100%);  */
 	background: linear-gradient(45deg, @orange 0%, @cyan 43%, @pink 80%, @purple 100%); 
-    background-size: 300% 300%;
-    animation: gradient 10s ease infinite;
+    background-size: 500% 500%;
+    animation: gradient 10s linear infinite;
     color: #fff;
 }
 
@@ -108,9 +108,9 @@ button:hover {
 	box-shadow: inset 0 -3px transparent;
 	border-radius: 15px;
 	background: rgb(202,158,230);
-	background: linear-gradient(45deg, rgba(202,158,230,1) 0%, rgba(245,194,231,1) 43%, rgba(180,190,254,1) 80%, rgba(137,180,250,1) 100%); 
-	background-size: 300% 300%;
-	animation: gradient 10s ease infinite;
+	background: linear-gradient(45deg, @orange 0%, @cyan 43%, @pink 80%, @purple 100%); 
+    background-size: 500% 500%;
+	animation: gradient 10s linear infinite;
 	}
 
 #workspaces {

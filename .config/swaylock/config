@@ -16,7 +16,7 @@ effect-vignette=0.5:0.5
 
 indicator-idle-visible
 indicator-radius=175
-indicator-thickness=20
+indicator-thickness=25
 indicator-caps-lock
 
 

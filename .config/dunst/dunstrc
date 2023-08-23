@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 5x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -49,7 +49,7 @@
 
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
-    progress_bar_height = 12
+    progress_bar_height = 14
 
     # Set the frame width of the progress bar
     progress_bar_frame_width = 1
@@ -86,10 +86,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#282a36"
+    frame_color = "#ff79c6"
 
     # Define a color for the separator.
     # possible values are:
@@ -151,8 +151,8 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "%s %p\n%b"
-
+    #format = "%s %p\n%b"
+    format = "%s %b"
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
     alignment = left
@@ -196,7 +196,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /home/lee/.local/share/icons/
 
     ### History ###
 

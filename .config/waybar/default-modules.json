@@ -4,8 +4,9 @@
       "on-scroll-down": "hyprctl dispatcher workspace e-1",
       "on-click": "activate",
       "all-outputs": true,
+      "active-only": false,
       "warp-on-scroll": false,
-      "format": "{name}: {icon}",
+      "format": "{icon}",
       "format-icons": {
           "1": "",
           "2": "",
@@ -15,11 +16,7 @@
           "urgent": "",
           "focused": "",
           "default": ""
-      },
-     "persistent_workspaces": {
-           "*": 5, // 5 workspaces by default on every monitor
-           "HDMI-A-1": 3 // but only three on HDMI-A-1
-     }
+      }
   },
   "hyprland/taskbar": {
     "format": "{icon}",
@@ -124,8 +121,8 @@
   "battery": {
       "states": {
           // "good": 95,
-          "warning": 30,
-          "critical": 15
+          "warning": 35,
+          "critical": 20
       },
       "format": "{capacity}% {icon}",
       "format-charging": "{capacity}% ",

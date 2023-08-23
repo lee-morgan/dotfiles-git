@@ -10,6 +10,7 @@
 	],
 	"modules-left": [
 		"wlr/workspaces", 
+		"idle_inhibitor", 
 		"hyprland/taskbar",
 		"custom/media"
 	],
@@ -18,7 +19,6 @@
 	],
 	"modules-right": [
 		"mpd", 
-		"idle_inhibitor", 
 		"pulseaudio", 
 		"network", 
 		"cpu", 

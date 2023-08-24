@@ -1,36 +1,17 @@
 {
-	"layer": "top", 
+	"layer": "bottom", 
 	"position": "top", 
-	"height": 25, 
+	"height": 50, 
 	"spacing": 5, 
 	"name": "main",
-"margin-bottom":-6,
+	"margin-bottom":-11,
 	"include": [
 		"~/.config/waybar/default-modules.json",
+		"~/.config/waybar/custom-modules.json"
 	],
-	"modules-left": [
-		"wlr/workspaces", 
-		"idle_inhibitor", 
-		"hyprland/taskbar",
-		"custom/media"
-	],
-	"modules-center": [
-		"hyprland/window"
-	],
-	"modules-right": [
-		"mpd", 
-		"pulseaudio", 
-		"network", 
-		"cpu", 
-		"memory", 
-		"temperature", 
-		"backlight", 
-		"keyboard-state", 
-		"battery", 
-		"clock",
-		"bluetooth",
-		"tray"
-	]
+    "modules-left": ["wlr/workspaces"],
+    "modules-right": ["tray","temperature","network","battery","custom/ss","custom/cycle_wall","custom/expand","cpu","clock"],
+    "modules-center": ["custom/dynamic_pill"],
 }
 
 

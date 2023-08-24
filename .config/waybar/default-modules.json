@@ -6,7 +6,7 @@
       "all-outputs": true,
       "active-only": false,
       "warp-on-scroll": false,
-      "format": "{icon}",
+      "format": "{name}",
       "format-icons": {
           "1": "",
           "2": "",

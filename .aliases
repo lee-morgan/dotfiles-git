@@ -104,7 +104,7 @@ alias tag='git tag'
 alias newtag='git tag -a'
 
 # Although this is a git alias i have separated it from the rest because it's special :)
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles-git/ --work-tree=$HOME'
+alias dtf='/usr/bin/git --git-dir=$HOME/dotfiles-git/ --work-tree=$HOME'
 
 # reload bash config
 alias reload="source ~/.bashrc"

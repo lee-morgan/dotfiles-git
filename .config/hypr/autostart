@@ -15,7 +15,7 @@ $scripts/tools/dynamic &
 $scripts/wall $config/wallpapers/cloud.png &
 
 # effects
-$scripts/rgb &
+$scripts/rgb_borders &
 
 # other
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

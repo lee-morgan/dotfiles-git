@@ -7,13 +7,18 @@
 * {
 	/* border: none;
 	border-radius: 0; */
-	font-family: JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+	font-family: CartographCF Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	/* min-height: 0; */
 }
 
 window#waybar {
     background-color: transparent;
+}
+
+tooltip {
+    border-radius: 5px;
+    background-color: rgba(202,158,230,1);
 }
 
 #workspaces{
@@ -154,7 +159,6 @@ window#waybar {
     border-radius: 15px;
 }
 
-
 #clock {
     background: rgb(245,194,231);
     background: linear-gradient(45deg, rgba(245,194,231,1) 0%, rgba(203,166,247,1) 64%, rgba(202,158,230,1) 100%); 
@@ -198,10 +202,6 @@ window#waybar {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-label:focus {
-   
 }
 
 #cpu {

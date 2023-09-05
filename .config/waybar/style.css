@@ -1,15 +1,9 @@
-/* @import url("./colors.css"); */
-/* 
-	margin/padding: top right bottom left
-	margin/padding: top left/right bottom
-	margin/padding: top/bottom left/right
- */
 * {
-	/* border: none;
-	border-radius: 0; */
+    border: none;
+	border-radius: 0;
 	font-family: CartographCF Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 13px;
-	/* min-height: 0; */
+    min-height: 0;
 }
 
 window#waybar {
@@ -17,52 +11,48 @@ window#waybar {
 }
 
 tooltip {
-    border-radius: 5px;
-    background-color: rgba(202,158,230,1);
+    background: transparent;
+}
+
+tooltip label {
+    background: #fff;
+    color: #89b4fa;
+    border: 2px solid #89b4fa;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 #workspaces{
     background-color: transparent;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 25px;
+    margin: 10px 10px 10px 25px;
 }
 #workspaces button{
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
     background-color: #fff ;
+    color: 	#cba6f7 ;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     border-radius: 15px;
     margin-right: 10px;
     padding-top: 4px;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     padding-right: 10px;
-    font-weight: bolder;
-    color: 	#cba6f7 ;
 }
 
 #workspaces button.active{
-    padding-right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    padding-left: 20px;
-    padding-bottom: 3px;
     background: rgb(202,158,230);
     background: linear-gradient(45deg, rgba(202,158,230,1) 0%, rgba(245,194,231,1) 43%, rgba(180,190,254,1) 80%, rgba(137,180,250,1) 100%); 
-    background-size: 300% 300%;
     animation: gradient 10s ease infinite;
     color: #fff;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    background-size: 300% 300%;
+    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-left: 20px;
 }
 
 
@@ -94,6 +84,11 @@ tooltip {
     margin-right: 10px;
 }
 
+#custom-expand {
+    /* padding-left: 11px;
+    padding-right: 11px; */
+    min-width: 15px;
+}
 #custom-dynamic_pill.low{
     background: rgb(148,226,213);
     background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%); 
@@ -171,7 +166,8 @@ tooltip {
     padding-top: 5px;
     padding-right: 21px;
     font-weight: bolder;
-    padding-left: 20px
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
 #battery.charging, #battery.plugged {
@@ -187,12 +183,6 @@ tooltip {
     padding-right: 15px;
 }
 
-@keyframes blink {
-    to {
-        background-color: #f9e2af;
-        color:#96804e;
-    }
-}
 
 #battery.critical:not(.charging) {
     background-color:  #f38ba8;
@@ -346,4 +336,17 @@ tooltip {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes blink {
+    to {
+        background-color: #f9e2af;
+        color:#96804e;
+    }
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }

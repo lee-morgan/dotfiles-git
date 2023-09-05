@@ -40,7 +40,7 @@ do
             
         *)
             if $scripts/toolbar_state; then
-                echo "     "
+                echo "   " #"     "
             else
                 echo ""
             fi

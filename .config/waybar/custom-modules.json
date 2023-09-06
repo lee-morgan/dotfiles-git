@@ -13,6 +13,7 @@
     },
     "custom/cycle_wall":{
         "format":"{}",
+        "tooltip": false,
         "exec": "~/.config/hypr/scripts/tools/expand wall",
         // "interval": 1,
         "on-click": "~/.config/hypr/scripts/tools/expand cycle"
@@ -22,6 +23,14 @@
         "format":"{}",
         "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
     },
+    "custom/pacman": {
+        "format": "{}  ",
+        "interval": 3600,                     // every hour
+        "exec": "checkupdates | wc -l",       // # of updates
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "termite -e 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar", // update system
+        "signal": 8
+    }
     // "custom/waybar-mpris": {
     //     "return-type": "json",
     //     "exec": "echo '   '",

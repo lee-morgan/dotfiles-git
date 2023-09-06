@@ -1,17 +1,31 @@
 {
 	"layer": "top", 
 	"position": "top", 
-	"height": 40, 
-	"spacing": 5, 
+	"height": 50, 
+	"spacing": 0, 
 	"name": "main",
 	"margin-bottom":-11,
+    "modules-left": [
+		"hyprland/workspaces"
+	],
+	"modules-center": [
+		"custom/dynamic_pill"
+	],
+    "modules-right": [
+		"tray",
+		"temperature",
+		"network",
+		"battery",
+		"custom/ss",
+		"custom/cycle_wall",
+		"custom/expand",
+		"cpu",
+		"clock"
+	],
 	"include": [
 		"~/.config/waybar/default-modules.json",
 		"~/.config/waybar/custom-modules.json"
-	],
-    "modules-left": ["wlr/workspaces"],
-    "modules-right": ["tray","temperature","network","battery","custom/ss","custom/cycle_wall","custom/expand","cpu","clock"],
-    "modules-center": ["custom/dynamic_pill"],
+	]
 }
 
 

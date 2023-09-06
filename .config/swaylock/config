@@ -15,7 +15,7 @@ effect-blur=7x4
 effect-vignette=0.5:0.5
 
 indicator-idle-visible
-indicator-radius=175
+indicator-radius=180
 indicator-thickness=25
 indicator-caps-lock
 

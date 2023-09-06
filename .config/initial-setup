@@ -1,17 +1,47 @@
 #! /usr/bin/env bash 
 
-# Post setup requirements
-repo-dir=$HOME/repos
-mkdir $repos-dir && cd $repos-dir 
-git clone https://aur.archlinux.org/paru.git 
-cd $repos-dir/paru 
+# repodir=$HOME/repos
+# # Post setup requirements
+# cd $HOME
+# echo $PWD
+# sleep 3
+# if [ ! -d $repodir ]; then 
+#     mkdir $repodir 
+# fi
+
+# cd repos
+# git clone https://aur.archlinux.org/paru.git 
+# pushd $repodir/paru 
+# makepkg -si
+# popd
 
 
 # Install software from the Arch repository 
 # I will probably do this from ansible in the future
 
+### Patching files ###
 
+echo "Patching /etc/hostname"
+echo 
+echo -e "nysa" >> /mnt/etc/hostname
 
+echo "Patching /etc/hosts"
+echo 
+echo -e "127.0.0.1\tlocalhost" >> /mnt/etc/hosts
+echo -e "::1\t\tlocalhost" >> /mnt/etc/hosts
+echo -e "127.0.1.1\t$HOSTNAME.local\t$HOSTNAME" >> /mnt/etc/hosts
+
+echo "Patching pacman.conf"
+echo 
+sed -i 's/#Color/Color/g' /mnt/etc/pacman.conf
+
+echo "Patching locale.conf"
+echo 
+echo -e "LANG=en_GB.UTF-8" >> /mnt/etc/locale.conf
+
+echo "Patching locale.gen"
+echo 
+sed -i 's/#en_GB.UTF/en_GB.UTF/g' /mnt/etc/locale.gen
 
 # Clone and setup AUR helper
 

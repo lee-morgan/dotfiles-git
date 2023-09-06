@@ -9,19 +9,22 @@
     "custom/ss":{
         "format":"{}",
         "exec":"~/.config/hypr/scripts/tools/expand ss-icon",
-        "on-click": "~/.config/hypr/scripts/screenshot"
+        "on-click": "~/.config/hypr/scripts/screenshot",
+        "tooltip": false
     },
     "custom/cycle_wall":{
         "format":"{}",
         "tooltip": false,
         "exec": "~/.config/hypr/scripts/tools/expand wall",
         // "interval": 1,
-        "on-click": "~/.config/hypr/scripts/tools/expand cycle"
+        "on-click": "~/.config/hypr/scripts/tools/expand cycle",
+        "tooltip": false
     },
     "custom/expand":{
         "on-click":"~/.config/hypr/scripts/expand_toolbar",
         "format":"{}",
-        "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
+        "exec":"~/.config/hypr/scripts/tools/expand arrow-icon",
+        "tooltip": false
     },
     "custom/pacman": {
         "format": "{}  ",

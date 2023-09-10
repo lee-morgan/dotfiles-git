@@ -96,7 +96,7 @@
     "timezone": "Europe/London",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "interval": 60,
-    "format": "{:%I:%M}",
+    "format": "{:%H:%M}",
     "max-length": 25
 },
 "cpu": {

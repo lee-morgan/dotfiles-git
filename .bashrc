@@ -11,7 +11,7 @@
 [[ -f ~/.bash_functions ]] && . ~/.bash_functions
 
 ### Export useful environment variables
-export TERM=xterm-256color
+export TERM=linux
 export EDITOR="vim"
 export ALTERNATE_EDITOR="nano" 
 export VISUAL="code"

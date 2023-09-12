@@ -1,0 +1,9 @@
+### Export environment variables
+export TERM=linux
+export EDITOR="nano"
+export ALTERNATE_EDITOR="nano" 
+export VISUAL="code"
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT="%Y-%m-%d %T "

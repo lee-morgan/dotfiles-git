@@ -1,29 +1,30 @@
 ### This is my .bashrc file that has been butchered from several youtube creators
 
-### If not running interactively don't do anything.
+### Check we're interactive ###
 [[ $- != *i* ]] && return
 
-# Custom aliases
+### Aliases ###
 [[ -f $HOME/.config/bash/aliases ]] && . $HOME/.config/bash//aliases
 
-# Terminal theming
+### Styling ###
 [[ -f $HOME.config/bash/style ]] && . $HOME/.config/bash/style
 
-# Custom functions
+### Functions ###
 [[ -f $HOME/.config/bash/functions ]] && . $HOME/.config/bash/functions
 
-### Export useful environment variables
+### Export Variables ###
 [[ -f $HOME/.config/bash/exports ]] && . $HOME/.config/bash/exports
 
-### Export useful environment variables
+### Shopt Options ###
 [[ -f $HOME/.config/bash/options ]] && . $HOME/.config/bash/options
 
-### Show system information at login
+### Show system information at login ###
 if type -p "neofetch" > /dev/null; then
-  neofetch
+  # I only want to run for the first opened terminal
+  [[ ! -f /tmp/runonce ]] && neofetch && touch /tmp/runonce
 fi
 
-# Use starship prompt if it's installed
+### Use starship prompt if it's installed ###
 if command -v starship >/dev/null; then
   eval "$(starship init bash)"
 else

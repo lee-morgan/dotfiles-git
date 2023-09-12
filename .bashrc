@@ -1,16 +1,19 @@
-# This is my .bashrc file that has been butchered from several youtube creators
+### This is my .bashrc file that has been butchered from several youtube creators
 
-# Load aliases file
-#source ~/.aliases
+### Load supporting configurations
 
-# Load bash functions
-#source ~/.bash_functions
+# Custom aliases
+[[ -f $HOME/.config/bash/aliases ]] && . $HOME/.config/bash//aliases
 
-[[ -f ~/.aliases ]] && . ~/.aliases
-[[ -f ~/.bash_styles ]] && . ~/.bash_styles
-[[ -f ~/.bash_functions ]] && . ~/.bash_functions
+# Terminal theming
+[[ -f $HOME.config/bash/style ]] && . $HOME/.config/bash/style
+
+# Custom functions
+[[ -f $HOME/.config/bash/functions ]] && . $HOME/.config/bash/functions
 
 ### Export useful environment variables
+[[ -f $CFG/exports ]] && . $CFG/exports
+
 export TERM=linux
 export EDITOR="vim"
 export ALTERNATE_EDITOR="nano" 
@@ -21,12 +24,8 @@ export HISTCONTROL=ignoredups:erasedups
 export HISTTIMEFORMAT="%Y-%m-%d %T "
 
 ### Show system information at login
-if [ -t 0 ]; then
-    if type -p "neofetch" > /dev/null; then
-        neofetch
-    else
-        echo "DOH!!! neofetch is not installed.\nInstall with sudo apt install neofetch"
-    fi
+if type -p "neofetch" > /dev/null; then
+  neofetch
 fi
 
 ### If not running interactively don't do anything.
@@ -43,18 +42,6 @@ shopt -s checkwinsize # checks term size when bash regains control
 
 ### ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
-
-### Add /home/$USER/bin to $PATH
-case :$PATH: in
-	*:/home/$USER/bin:*) ;;
-	*) PATH=/home/$USER/bin:$PATH ;;
-esac
-
-### Add /home/$USER/.local/bin to $PATH
-case :$PATH: in
-	*:/home/$USER/.local/bin:*) ;;
-	*) PATH=/home/$USER/.local/bin:$PATH ;;
-esac
 
 # Enable programmable completion features
 if ! shopt -oq posix; then
@@ -75,8 +62,9 @@ case ${TERM} in
     ;;
 esac
 
-### Comment out if using sharship prompt (below)
-#export PS1="\[\033[38;5;2m\]┌────(\[\033[38;5;38m\]\u\[\033[38;5;2m\]::\[\033[38;5;38m\]\h\[\033[38;5;2m\])─[\[$(tput sgr0)\]\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[\033[38;5;2m\]]\n└─(\j)\\$ \[$(tput sgr0)\]"
-
-### Set the starship prompt
-eval "$(starship init bash)"
+# Use starship prompt if it's installed
+if command -v starship >/dev/null; then
+  eval "$(starship init bash)"
+else
+  export PS1="\[\033[38;5;2m\]┌────(\[\033[38;5;38m\]\u\[\033[38;5;2m\]::\[\033[38;5;38m\]\h\[\033[38;5;2m\])─[\[$(tput sgr0)\]\[\033[38;5;38m\]\w\[$(tput sgr0)\]\[\033[38;5;2m\]]\n└─(\j)\\$ \[$(tput sgr0)\]"
+fi

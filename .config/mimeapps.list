@@ -1,5 +1,5 @@
 [Added Associations]
-inode/directory=code-oss.desktop;
+inode/directory=code.desktop;
 
 [Default Applications]
 image/png=sxiv.desktop

@@ -1,0 +1,7 @@
+[Added Associations]
+inode/directory=code-oss.desktop;
+
+[Default Applications]
+image/png=sxiv.desktop
+image/jpg=sxiv.desktop
+image/jpeg=sxiv.desktop

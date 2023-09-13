@@ -33,7 +33,13 @@ backup() {
  cp "$1"{,.bak}
  }
  
- # Compare checksums [file] [key]
- md5check() {
-  md5sum "$1" | grep "$2"
-  }
+# Compare checksums [file] [key]
+md5check() {
+    md5sum "$1" | grep "$2"
+}
+
+
+# Fix line endings on scripts (useful when I write them in windows or on github) ### UNTESTED YET ###
+fixle() {
+    sed -i -e 's/\r$//' $1
+}

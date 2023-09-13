@@ -43,3 +43,8 @@ md5check() {
 fixle() {
     sed -i -e 's/\r$//' $1
 }
+
+# Cleanup blank lines and comments from files
+cleanup() {
+    echo "Work in progress"
+}

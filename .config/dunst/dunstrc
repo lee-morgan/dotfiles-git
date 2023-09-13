@@ -202,7 +202,7 @@
     max_icon_size = 64
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/128x128/status/:/usr/share/icons/gnome/128x128/devices/
+    icon_path = /usr/share/icons/gnome/128x128/status/:/usr/share/icons/gnome/128x128/devices/:/home/lee/.local/share/icons/
     icon_theme = "Papirus, Adwaita"
     enable_recursive_icon_lookup = true
 

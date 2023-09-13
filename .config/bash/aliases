@@ -27,7 +27,7 @@ alias playavi='vlc *.avi'
 alias playmov='vlc *.mov'
 alias playmp4='vlc *.mp4'
 
-# Changing "ls" to "exa"
+# Changing "ls" to "eza"
 alias ls='eza -al --color=always --group-directories-first --icons --git' # my preferred listing
 alias la='eza -a --color=always --group-directories-first --icons --git'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first --icons --git'  # long format

@@ -1,21 +1,21 @@
-# Faster completion
+### Faster completion ###
 set show-all-if-unmodified on
 set show-all-if-ambiguous on
 
-# Fast word movement CTRL+[LEFT,RIGHT]
+### Fast word movement CTRL+[LEFT,RIGHT] ###
 "\e[1;5D": backward-word
 "\e[1;5C": forward-word
 
-# History search
+### History search ###
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 
-# Color files by types
+### Color files by types ###
 set colored-stats On
 set visible-stats On
 set mark-symlinked-directories On
 set colored-completion-prefix On
 set menu-complete-display-prefix On
 
-# Macro to prefix with sudo.
+### Macro to prefix with sudo. ###
 "\es": "\C-asudo \C-e"

@@ -1,5 +1,3 @@
-### This is my .bashrc file that has been butchered from several youtube creators
-
 ### Check we're interactive ###
 [[ $- != *i* ]] && return
 

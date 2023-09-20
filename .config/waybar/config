@@ -13,6 +13,7 @@
 	],
     "modules-right": [
 		"tray",
+		"bluetooth",
 		"temperature",
 		"network",
 		"battery",

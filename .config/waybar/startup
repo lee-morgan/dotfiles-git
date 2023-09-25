@@ -1,7 +1,0 @@
-#!/bin/env bash
-
-### Script to reload waybar ###
-
-pkill waybar 
-sleep 1
-waybar &

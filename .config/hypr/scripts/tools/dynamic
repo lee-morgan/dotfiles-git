@@ -8,7 +8,7 @@ import time
 import threading
 
 OUT = f"{Path.home()}/.config/hypr/store/dynamic_out.txt"
-# PREV_PATH = f"{Path.home()}/.config/hypr/store/prev.txt"
+PREV_PATH = f"{Path.home()}/.config/hypr/store/prev.txt"
 prev = None
 
 def print(ar):

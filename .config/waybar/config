@@ -1,27 +1,39 @@
 {
 	"layer": "top", 
 	"position": "top", 
-	"height": 50, 
+	"height": 20, 
 	"spacing": 0, 
 	"name": "main",
-	"margin-bottom":-11,
-    "modules-left": [
-		"hyprland/workspaces"
+	"margin-left": 10,
+	"margin-right": 10,
+	"margin-top": 10,
+	"margin-bottom": 5,
+
+	"modules-left": [
+		"custom/applauncher",
+		"hyprland/workspaces",
+		"custom/browser",
+		"custom/ide",
+		"hyprland/window"
 	],
+
 	"modules-center": [
-		"custom/dynamic_pill"
+		"idle_inhibitor",
+		"custom/pacman"
 	],
-    "modules-right": [
+
+	"modules-right": [
 		"tray",
+		"custom/expand",
+		"custom/cycle_wall",
+		"custom/ss",
+		"cpu",
 		"bluetooth",
 		"temperature",
 		"network",
 		"battery",
-		"custom/ss",
-		"custom/cycle_wall",
-		"custom/expand",
-		"cpu",
-		"clock"
+		"clock",
+		"custom/power"
 	],
 	"include": [
 		"~/.config/waybar/default-modules.json",

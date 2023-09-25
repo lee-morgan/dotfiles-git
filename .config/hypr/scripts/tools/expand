@@ -24,9 +24,9 @@ do
             ;;
         "arrow-icon")
             if $scripts/toolbar_state; then
-                echo ""
+                echo ""
             else
-                echo ""
+                echo ""
             fi
             ;;
         "ss-icon")
@@ -40,7 +40,7 @@ do
             
         *)
             if $scripts/toolbar_state; then
-                echo "   " #"     "
+                echo "" #"     "
             else
                 echo ""
             fi

@@ -31,9 +31,31 @@
         "interval": 3600,                     // every hour
         "exec": "checkupdates | wc -l",       // # of updates
         "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "termite -e 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar", // update system
+        "on-click": "kitty --title system_updates --hold echo 'Updating the system.'; sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
         "signal": 8
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "wlogout"
+    },
+    "custom/browser": {
+        "format": "",
+        "on-click": "firefox"
+        
+    },
+    "custom/player": {
+        "format": "",
+        "on-click": "spotify"
+    },
+    "custom/applauncher": {
+        "format": "",
+        "on-click": "code"
+    },
+    "custom/ide": {
+        "format": "󰨞",
+        "on-click": "code"
     }
+
     // "custom/waybar-mpris": {
     //     "return-type": "json",
     //     "exec": "echo '   '",

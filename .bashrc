@@ -5,7 +5,7 @@
 [[ -f $HOME/.config/bash/aliases ]] && . $HOME/.config/bash//aliases
 
 ### Styling ###
-[[ -f $HOME.config/bash/style ]] && . $HOME/.config/bash/style
+[[ -f $HOME/.config/bash/style ]] && . $HOME/.config/bash/style
 
 ### Functions ###
 [[ -f $HOME/.config/bash/functions ]] && . $HOME/.config/bash/functions

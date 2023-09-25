@@ -6,18 +6,17 @@
       "all-outputs": true,
       "active-only": false,
       "warp-on-scroll": false,
-      "format": "{name}",
+      "format": "{icon}",
       "format-icons": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-          "5": "",
-          "urgent": "",
-          "focused": "",
-          "default": ""
-      }
+          "urgent": "",
+          "focused": "",
+          "default": ""
+      },
+      "persistent_workspaces": {
+        "*": 5
+    }  
   },
+
   "hyprland/taskbar": {
     "format": "{icon}",
     "icon-size": 14,
@@ -36,6 +35,16 @@
       "Foot Server": "Terminal"
     }
   },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 40,
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "🌎 [ $1 ]",
+        "(.*) - Visual Studio Code": "[ $1 ]",
+        "(.*) - kitty": "> [ $1 ]"
+    },
+    "separate-outputs": true
+    },
   "keyboard-state": {
       "numlock": true,
       "capslock": true,
@@ -46,7 +55,7 @@
       }
   },
   "bluetooth": {
-    "format": " {status}",
+    "format": "",
     "format-connected": " {device_alias}",
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
     "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
@@ -102,7 +111,16 @@
 "cpu": {
     "interval":1,
     "format": "{icon0} {icon1} {icon2} {icon3}",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    "format-icons": [
+        "<span color='#f8f8f2'>▁</span>", 
+        "<span color='#f8f8f2'>▂</span>", 
+        "<span color='#f8f8f2'>▃</span>", 
+        "<span color='#f8f8f2'>▄</span>", 
+        "<span color='#f8f8f2'>▅</span>", 
+        "<span color='#ffffa5'>▆</span>", 
+        "<span color='#ff9977'>▇</span>", 
+        "<span color='#dd532e'>█</span>"  
+    ]
 },
   "memory": {
       "format": "{}% "
@@ -110,7 +128,7 @@
   "temperature": {
     "critical-threshold": 80,
     "format-critical": "{temperatureC}°C",
-    "format": ""
+    "format": "{}"
 },
   "backlight": {
       "format": "{percent}% {icon}",
@@ -128,10 +146,10 @@
 },
 "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "",
-    "format-ethernet": "",
+    "format-wifi": " {essid} ({signalStrength}%)",
+    "format-ethernet": "{}",
     "tooltip-format": "via {gwaddr} {ifname}",
-    "format-linked": "",
+    "format-linked": "{}",
     "format-disconnected": "wifi",
     "format-alt": "   "
 },

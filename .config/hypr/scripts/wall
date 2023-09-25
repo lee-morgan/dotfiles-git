@@ -1,3 +1,6 @@
 #!/usr/bin/bash
-swww init
-swww img $1 --transition-type grow --transition-pos "$(hyprctl cursorpos)" --invert-y --transition-duration 4
+#swww init
+swww img $1 --transition-type grow --transition-pos "$(hyprctl cursorpos)" --invert-y --transition-duration 3 &
+$HOME/.config/waybar/launch_waybar &
+notify-send "Wallpaper and theme have been changed to $1"
+wal -i $1 -n

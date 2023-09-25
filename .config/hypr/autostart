@@ -9,13 +9,10 @@ dunst &
 
 # waybar
 $HOME/.config/waybar/startup &
-$scripts/tools/dynamic &
 
 # wallpaper
-$scripts/wall $config/wallpapers/cloud.png &
+# $scripts/wall "$(< "${HOME}/.cache/wal/wal")" &
 
-# effects
-$scripts/rgb_borders &
 
 # other
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

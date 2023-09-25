@@ -28,7 +28,9 @@ text-ver-color=1F202A
 text-wrong-color=1F202A
 
 color=282a36
-inside-color=1F202A
+inside-color=00000033
+# inside-color=1F202A
+
 line-color=1F202A
 ring-color=bd93f9
 

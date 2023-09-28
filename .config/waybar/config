@@ -17,10 +17,9 @@
 		"hyprland/window"
 	],
 
-	"modules-center": [
-		"idle_inhibitor",
-		"custom/pacman"
-	],
+	// "modules-center": [
+
+	// ],
 
 	"modules-right": [
 		"tray",
@@ -28,6 +27,8 @@
 		"custom/cycle_wall",
 		"custom/ss",
 		"cpu",
+		"idle_inhibitor",
+		"custom/pacman",
 		"bluetooth",
 		"temperature",
 		"network",

@@ -1,87 +1,71 @@
 @import '../../.cache/wal/colors-waybar.css';
 
-* {
-    border: none;
-	border-radius: 0;
-	font-family: Symbols Nerd Font Mono, Firacode Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
-	font-size: 13px;
-    min-height: 0;
-    border: 0px;
-    border: 0px;
-}
-
-#window {
-    background: #fff;
-    color: @background;
-    font-size: 15px;
-    padding: 5px 5px 0px 5px;
+window {
+    border: 3px solid @color9;
     border-radius: 12px;
 }
 
-window#waybar {
-   background-color: transparent;
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Firacode Nerd Font, Symbols Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
+    min-height: 0;
+    font-size: 13px;
+    border: 0;
+    border: 0;
 }
 
+window#waybar {
+    background-color: transparent;
+}
 
 tooltip {
     background: transparent;
 }
 
 tooltip label {
-    background: @foreground;
-    color: @color3;
-    border: 2px solid @color11;
+    background: @color9;
+    color: #fff;
+    border: 3px solid #fff;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bolder;
 }
-
-/* .modules-left {
-    background: @background;
-    border-radius: 12px;
-} */
-
-/* .modules-center {
-    background: @background;
-    border-radius: 12px;
-} */
-
-/* .modules-right {
-    background: @background;
-    border-radius: 14px;
-    padding: 5px;
-} */
 
 button {
     padding-left: 4px;
     padding-right: 4px;
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
-#workspaces{
+#workspaces {
     background: #fff;
-    margin: 0px 10px;
     border-radius: 12px;
     border: 3px solid #fff;
+    opacity: 0.8;
+    margin: 0 5px;
 }
 
-#workspaces button{
+#workspaces button {
     background: @color9 ;
-    color: 	#fff;
-    border-radius: 14px;
+    color: #fff;
+    border-radius: 12px;
     transition: all 0.3s ease-in-out;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-#workspaces button.active{
-    border-radius: 10px;
-    min-width: 30px;
+#workspaces button.active {
+    border-radius: 12px;
+    min-width: 3em;
     transition: all 0.3s ease-in-out;
-    opacity:1.0;
+    opacity: 1.0;
 }
 
 #workspaces button:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
+
 /* Set default style to all modules */
 #backlight,
 #battery,
@@ -95,101 +79,99 @@ button {
 #custom-ide,
 #custom-media,
 #custom-pacman,
-#custom-player,
 #custom-power,
 #custom-ss,
 #disk,
 #idle_inhibitor,
 #memory,
-#mpd,
 #network,
 #pulseaudio,
 #temperature,
 #tray {
-    background: transparent;
+    padding: 0 5px;
+    /* margin-right: 5px; */
     color: #fff;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    padding: 0px 3px;
+    font-size: 12px;
+}
+
+#network,
+#clock,
+#battery {
+    background: @color9;
+    opacity: 0.8;
 }
 
 #custom-power,
 #custom-applauncher,
 #custom-ide,
-#custom-browser,
-#custom-player {
+#custom-browser {
     padding-top: 3px;
     border: 0;
-    font-size: 20px;
+    font-size: 22px;
+    opacity: 0.8;
 }
 
-#custom-ide,
-#custom-browser {
-    margin-right: 10px;
-}
-
-/* White background */
-#custom-cycle_wall {
-    color:#fff;
+#cpu,
+#custom-cycle_wall,
+#custom-expand,
+#custom-ss {
+    border: 3px solid @color9;
+    background: #fff;
+    color: @color9;
+    margin: 0;
+    opacity: 0.8;
 }
 
 #custom-expand {
-    color:#fff;
     border-radius: 12px 0 0 12px;
+    padding-left: 5px;
+    border-right: 0;
 }
 
-#custom-ss{
-    background: transparent;
-    color: white;
+#cpu {
+    border-radius: 0 12px 12px 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-left: 0;
+}
+
+#custom-cycle_wall,
+#custom-ss {
+    border-left: 0;
+    border-right: 0;
 }
 
 #bluetooth {
-    color: white;
-}
-#bluetooth:hover {
-    color:yellow;
-}
-#custom-cycle_wall{
-    /* color: @color14; */
-    background: transparent;
-    animation: gradient 7s linear infinite;
-}
-
-#custom-expand {
-    /* color: @color14; */
-    background: transparent;
-    border: 3px solid #fff;
-    padding: 0 5px;
-    border-right: 0px;
+    color: #fff;
 }
 
 #clock {
-    color: #fff ;
-    border-radius: 0px 12px 12px 0px;
-    background: transparent;
+    color: #fff;
+    border-radius: 12px;
     border: 3px solid #fff;
-    border-left: 0px;
-    font-size: 15px;
-    padding: 4px 4px 0 4px;
+    font-size: 12px;
+    padding: 4px 10px 2px 10px;
     font-weight: bold;
-    margin-right: 10px;
+    min-width: 50px;
 }
 
-#battery.charging, #battery.plugged {
-    margin-right: 10px;
+#battery.charging,
+#battery.plugged {
     border: 3px solid white;
-    border-left: 0px;
-    border-radius: 0 12px 12px 0;
+
 }
 
 #battery {
-    background-color: transparent;
-    color:#a6e3a1;
+    color: #fff;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding: 0 5px;
+    font-weight: bolder;
 }
 
 #battery.critical:not(.charging) {
-    background-color:  #f38ba8;
-    color:#bf5673;
+    background-color: #f38ba8;
+    color: #bf5673;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -198,15 +180,12 @@ button {
 }
 
 #cpu {
-    animation: gradient 20s ease infinite;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    background: transparent;
-
 }
 
 #memory {
     background-color: #cba6f7;
-    color: 	#9a75c7;
+    color: #9a75c7;
 }
 
 #disk {
@@ -217,31 +196,39 @@ button {
     color: #90b1b1;
 }
 
-#network{
-    color:#000;
+
+#network {
+    color: #fff;
+    border-radius: 12px;
+    /* background: transparent; */
+    border: 3px solid #fff;
+    font-weight: bolder;
+    padding: 0 5px;
+    opacity: 0.8;
 }
 
-#network.disabled{
+#custom-weather {
+    color: #fff;
+    margin: 0 10px;
+    background: transparent;
+    font-weight: bolder;
+    padding: 0 5px;
+    border: 0;
+}
+
+#network.disabled {
     background-color: #45475a;
 }
 
-#network.disconnected{
-    background: rgb(243,139,168);
-    background: linear-gradient(45deg, rgba(243,139,168,1) 0%, rgba(250,179,135,1) 100%); 
+#network.disconnected {
+    background: rgb(243, 139, 168);
+    background: linear-gradient(45deg, rgba(243, 139, 168, 1) 0%, rgba(250, 179, 135, 1) 100%);
     color: #fff;
     font-weight: bolder;
 }
 
-#network.linked, #network.wifi{
-    background-color: #a6e3a1 ;
-}
-
-#network.ethernet{
-    background-color:#f9e2af ;
-}
-
 #pulseaudio {
-    background-color:  	#fab387;
+    background-color: #fab387;
     color: #bf7d54;
 }
 
@@ -263,12 +250,12 @@ button {
 
 #temperature {
     background-color: #f9e2af;
-    color:#96804e;
+    color: #96804e;
 }
 
 #temperature.critical {
-    background-color: #f38ba8 ;
-    color:#bf5673;
+    background-color: #f38ba8;
+    color: #bf5673;
 }
 
 #idle_inhibitor {
@@ -280,15 +267,25 @@ button {
     color: #2d3436;
 }
 
+
+
 @keyframes blink {
     to {
         background-color: #f9e2af;
-        color:#96804e;
+        color: #96804e;
     }
 }
 
 @keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

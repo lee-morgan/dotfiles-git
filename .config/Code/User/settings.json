@@ -17,5 +17,7 @@
     
     },
     "editor.minimap.enabled": false,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Wal Bordered",
+    "window.zoomLevel": 1
 }

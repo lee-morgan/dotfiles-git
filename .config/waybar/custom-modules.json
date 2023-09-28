@@ -1,38 +1,41 @@
 {
-    // custom modules ////////////////
-    "custom/dynamic_pill": {
-        "return-type": "json",
-        // "format":"{}",
-        "exec": "~/.config/hypr/scripts/tools/start_dyn",
-        "escape":true
-    },
-    "custom/ss":{
-        "format":"{}",
-        "exec":"~/.config/hypr/scripts/tools/expand ss-icon",
-        "on-click": "~/.config/hypr/scripts/screenshot",
-        "tooltip": false
-    },
-    "custom/cycle_wall":{
-        "format":"{}",
-        "tooltip": false,
-        "exec": "~/.config/hypr/scripts/tools/expand wall",
-        // "interval": 1,
-        "on-click": "~/.config/hypr/scripts/tools/expand cycle",
-        "tooltip": false
-    },
     "custom/expand":{
+        "tooltip": false,
         "on-click":"~/.config/hypr/scripts/expand_toolbar",
         "format":"{}",
-        "exec":"~/.config/hypr/scripts/tools/expand arrow-icon",
-        "tooltip": false
+        "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
+    },
+    "custom/cycle_wall":{
+        "tooltip": false,
+        "format":"{}",
+        "exec": "~/.config/hypr/scripts/tools/expand wall",
+        "on-click": "~/.config/hypr/scripts/tools/expand cycle"
+    },
+    "custom/ss":{
+        "tooltip": false,
+        "format":"{}",
+        "exec":"~/.config/hypr/scripts/tools/expand ss-icon",
+        "on-click": "~/.config/hypr/scripts/screenshot"
     },
     "custom/pacman": {
-        "format": "{}  ",
-        "interval": 3600,                     // every hour
-        "exec": "checkupdates | wc -l",       // # of updates
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "kitty --title system_updates --hold echo 'Updating the system.'; sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+        "format": "{} ",
+        "interval": 1800,                   
+        "exec": "checkupdates | wc -l",     
+        "exec-if": "which checkupdates",    
+        "on-click": "kitty --title system_updates --hold sudo pacman -Syu; pkill -SIGRTMIN+8 waybar",
         "signal": 8
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
         "format": "⏻",
@@ -41,34 +44,42 @@
     "custom/browser": {
         "format": "",
         "on-click": "firefox"
-        
-    },
-    "custom/player": {
-        "format": "",
-        "on-click": "spotify"
     },
     "custom/applauncher": {
         "format": "",
-        "on-click": "code"
+        "on-click": "applauncher"
     },
     "custom/ide": {
         "format": "󰨞",
         "on-click": "code"
     }
 
+
+    // DISABLED ITEMS //
+
+
     // "custom/waybar-mpris": {
+        //     "return-type": "json",
+        //     "exec": "echo '   '",
+        //     "on-click": "waybar-mpris --send toggle",
+        //     // This option will switch between players on right click.
+        //         "on-click-right": "waybar-mpris --send player-next",
+        //     // The options below will switch the selected player on scroll
+        //         // "on-scroll-up": "waybar-mpris --send player-next",
+        //         // "on-scroll-down": "waybar-mpris --send player-prev",
+        //     // The options below will go to next/previous track on scroll
+        //         // "on-scroll-up": "waybar-mpris --send next",
+        //         // "on-scroll-down": "waybar-mpris --send prev",
+        //     "escape": true
+        // },
+        //////////////////////////////////
+    }
+
+    // "custom/weather": {
+    //     "exec": "weather_update Derby",
     //     "return-type": "json",
-    //     "exec": "echo '   '",
-    //     "on-click": "waybar-mpris --send toggle",
-    //     // This option will switch between players on right click.
-    //         "on-click-right": "waybar-mpris --send player-next",
-    //     // The options below will switch the selected player on scroll
-    //         // "on-scroll-up": "waybar-mpris --send player-next",
-    //         // "on-scroll-down": "waybar-mpris --send player-prev",
-    //     // The options below will go to next/previous track on scroll
-    //         // "on-scroll-up": "waybar-mpris --send next",
-    //         // "on-scroll-down": "waybar-mpris --send prev",
-    //     "escape": true
+    //     "format": "{}",
+    //     "on-click": "weather_update Derby",
+    //     "tooltip": true,
+    //     "interval": 3600
     // },
-    //////////////////////////////////
-}

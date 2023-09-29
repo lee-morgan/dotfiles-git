@@ -34,8 +34,8 @@ tooltip label {
 }
 
 button {
-    padding: 2px 4px 0 4px;
-    margin-right: 4px;
+/*     padding: 2px 4px 0 4px;
+    margin-right: 4px; */
 }
 
 #workspaces {
@@ -59,7 +59,7 @@ button {
 }
 
 #workspaces button:last-child {
-    margin-right: 0;
+/*     margin-right: 0; */
 }
 
 /* Set default style to all modules */
@@ -79,7 +79,7 @@ button {
 #pulseaudio,
 #temperature,
 #tray {
-    padding: 0 5px;
+/*     padding: 0 5px; */
     color: #fff;
     font-size: 12px;
 }
@@ -88,7 +88,7 @@ button {
 #clock,
 #battery {
     background: alpha(@color9,0.6);
-    margin-right: 5px;
+/*     margin-right: 5px; */
 }
 
 #window {
@@ -96,7 +96,7 @@ button {
     color: @color9;
     border-radius: 12px;
     font-weight: bolder;
-    padding: 0 5px;
+/*     padding: 0 5px; */
 }
 
 #custom-power,
@@ -110,7 +110,7 @@ button {
     font-size: 24px;
 }
 #custom-power {
-    margin-right: 0;
+/*     margin-right: 0; */
 }
 #cpu,
 #custom-cycle_wall,
@@ -118,19 +118,19 @@ button {
 #custom-ss {
     background: #fff;
     color: @color9;
-    margin: 0;
+/*     margin: 0; */
 }
 
 #custom-expand {
     border-radius: 12px 0 0 12px;
-    padding-left: 5px;
+/*     padding-left: 5px; */
     border-right: 0;
 }
 
 #cpu {
     border-radius: 0 12px 12px 0;
-    padding-right: 5px;
-    padding-bottom: 5px;
+/*     padding-right: 5px;
+    padding-bottom: 5px; */
     border-left: 0;
 }
 
@@ -149,7 +149,7 @@ button {
     border-radius: 12px;
     border: 3px solid #fff;
     font-size: 12px;
-    padding: 4px 10px 2px 10px;
+/*     padding: 4px 10px 2px 10px; */
     font-weight: bold;
     min-width: 50px;
 }
@@ -164,7 +164,7 @@ button {
     color: #fff;
     border: 3px solid white;
     border-radius: 12px;
-    padding: 0 5px;
+/*     padding: 0 5px; */
     font-weight: bolder;
 }
 
@@ -202,15 +202,15 @@ button {
     /* background: transparent; */
     border: 3px solid #fff;
     font-weight: bolder;
-    padding: 0 5px;
+/*     padding: 0 5px; */
 }
 
 #custom-weather {
     color: #fff;
-    margin: 0 10px;
+/*     margin: 0 10px; */
     background: transparent;
     font-weight: bolder;
-    padding: 0 5px;
+/*     padding: 0 5px; */
     border: 0;
 }
 

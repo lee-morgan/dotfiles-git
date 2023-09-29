@@ -28,7 +28,7 @@
 		"custom/ss",
 		"cpu",
 		"idle_inhibitor",
-		"custom/pacman",
+		"custom/updates",
 		"bluetooth",
 		"temperature",
 		"network",

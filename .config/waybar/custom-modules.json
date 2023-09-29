@@ -22,7 +22,7 @@
         "interval": 1800,                   
         "exec": "checkupdates | wc -l",     
         "exec-if": "which checkupdates",    
-        "on-click": "kitty --title system_updates --hold sudo pacman -Syu; pkill -SIGRTMIN+8 waybar",
+        "on-click": "kitty --title system_updates --hold sudo pacman -Syu; pkill -SIGRTMIN+8 waybar; exit",
         "signal": 8
     },
     "custom/media": {

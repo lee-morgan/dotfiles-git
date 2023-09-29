@@ -1,7 +1,7 @@
 {
     "terminal.integrated.cwd": "/home/lee/",
     "terminal.integrated.fontSize": 16,
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontFamily": "Firacode Nerd Font Mono",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "terminal.integrated.defaultProfile.linux": "bash",

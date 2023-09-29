@@ -15,12 +15,9 @@
     margin: 0;
 }
 
-window#waybar {
-    background-color: transparent;
-}
-
+window#waybar,
 tooltip {
-    background: transparent;
+    background-color: transparent;
 }
 
 tooltip label {
@@ -33,6 +30,7 @@ tooltip label {
     font-weight: bolder;
 }
 
+/* Workspaces */
 button {
 /*     padding: 2px 4px 0 4px;
     margin-right: 4px; */
@@ -53,7 +51,7 @@ button {
 
 #workspaces button.active {
     background: @color9 ;
-    border-radius: 12px;
+/*     border-radius: 12px; */
     min-width: 3em;
     transition: all 0.3s ease-in-out;
 }
@@ -61,6 +59,11 @@ button {
 #workspaces button:last-child {
 /*     margin-right: 0; */
 }
+
+
+
+
+
 
 /* Set default style to all modules */
 #backlight,

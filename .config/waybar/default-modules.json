@@ -48,10 +48,11 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 5
     },
     "clock": {
         "timezone": "Europe/London",
+        "format-alt": "{:%B %d, %Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "interval": 60,
         "format": "{:%H:%M}",
@@ -100,6 +101,7 @@
             "critical": 20
         },
         "format": "{icon} {capacity}%",
+        "format-alt": "{timeto}",
         "format-charging": "",
         "format-plugged": "",
         "format-icons": [

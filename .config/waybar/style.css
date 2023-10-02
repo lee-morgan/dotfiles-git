@@ -73,7 +73,7 @@ button {
 #temperature,
 #tray,
 #window {
-    background: alpha(@color9,0.6);
+    background: alpha(@color7,0.6);
     color: #fff;
     margin: 0 5px;
     padding: 0 5px;

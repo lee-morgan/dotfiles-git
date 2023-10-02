@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-waybar \
-  --config $HOME/.config/hypr/component/waybar/config \
-  --style $HOME/.config/hypr/component/waybar/style.css \
-  --log-level off &

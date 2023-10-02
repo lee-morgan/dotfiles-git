@@ -19,5 +19,5 @@
     "editor.minimap.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Wal Bordered",
-    "window.zoomLevel": 1
+    "window.zoomLevel": -1
 }

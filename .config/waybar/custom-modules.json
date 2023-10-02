@@ -39,18 +39,22 @@
     },
     "custom/power": {
         "format": "⏻",
+        "tooltip": false,
         "on-click": "wlogout"
     },
     "custom/browser": {
         "format": "",
+        "tooltip": false,
         "on-click": "firefox"
     },
     "custom/applauncher": {
         "format": "",
+        "tooltip": false,
         "on-click": "applauncher"
     },
     "custom/ide": {
         "format": "󰨞",
+        "tooltip": false,
         "on-click": "code"
     }
 

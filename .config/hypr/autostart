@@ -5,7 +5,7 @@ config=$HOME/.config/hypr
 scripts=$config/scripts
 
 # notification daemon
-dunst &
+swaync &
 
 # waybar
 $HOME/.config/waybar/startup &

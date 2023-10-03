@@ -1,0 +1,57 @@
+@import '../../.cache/wal/colors-wlogout.css';
+
+* {
+		font-family: "Firacode Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+		background-image: none;
+		transition: 20ms;
+}
+
+window {
+	background-color: rgba(12, 12, 12, 0.1);	
+}
+
+button {
+		font-size:22px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-size: 20%;
+		border-radius: 15px;
+		margin: 10px;
+		background-color: rgba(12, 12, 12, 0.3);
+		border: 3px solid @color8;
+		color: @color8;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus,
+button:active,
+button:hover {
+	color: @color11;
+	background-color: rgba(12, 12, 12, 0.5);
+	border: 3px solid @color11;
+}
+
+
+#lock {
+	background-image: image(url("icons/lock.png"));
+}
+
+#logout {
+	background-image: image(url("icons/logout.png"));
+}
+
+#suspend {
+	background-image: image(url("icons/suspend.png"));
+}
+
+#hibernate {
+	background-image: image(url("icons/hiberate.png"));
+}
+
+#shutdown {
+	background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot {
+	background-image: image(url("icons/reboot.png"));
+}

@@ -33,7 +33,7 @@
     origin = top-center
 
     # Offset from the origin
-    offset = 20x20
+    offset = 0x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -118,7 +118,7 @@
 
     ### Text ###
 
-    font = Sofia Pro 16
+    font = Firacode nerd font 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -184,7 +184,7 @@
     stack_duplicates = true
 
     # Hide the count of stacked notifications with the same content
-    hide_duplicate_count = false
+    hide_duplicate_count = true
 
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -238,7 +238,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 15
+    corner_radius = 12
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -305,7 +305,7 @@
     foreground = "#89b4fa"
     frame_color = "#89b4fa"
     timeout = 3
-    script = ~/.scripts/dunst/sound-normal.sh
+    #script = ~/.scripts/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -314,7 +314,7 @@
     foreground = "#a6e3a1"
     frame_color = "#a6e3a1"
     timeout = 3
-    script = ~/.scripts/dunst/sound-normal.sh
+    #script = ~/.scripts/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -323,7 +323,7 @@
     foreground = "#f38ba8"
     frame_color = "#f38ba8"
     timeout = 3
-    script = ~/.scripts/dunst/sound-critical.sh
+    #script = ~/.scripts/dunst/sound-critical.sh
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -449,13 +449,6 @@
 #    appname = "some_volume_notifiers"
 #    set_stack_tag = "volume"
 #
-[redirect]
-summary = "*"
-script = "~/.config/hypr/scripts/tools/notif"
-
-[logger]
-summary = "*"
-script = "~/.config/hypr/scripts/tools/notif"
 
 [spotify]
 summary = "*"

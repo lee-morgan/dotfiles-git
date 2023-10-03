@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+waybar \
+  --config $HOME/.config/waybar/config \
+  --style $HOME/.config/waybar/style.css \
+  --log-level off &

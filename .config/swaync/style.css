@@ -1,6 +1,8 @@
-/*
- * vim: ft=less
- */
+@import '../../.cache/wal/colors-waybar.css';
+@import 'styles/control-center.css';
+@import 'styles/notification.css';
+
+
 
 @define-color cc-bg rgba(0, 0, 0, 0.7);
 

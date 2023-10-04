@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/lee/.config/hypr/wallpapers/6.jpg"
+let background = "#23110f"
+let foreground = "#c8c3c3"
+let cursor     = "#c8c3c3"
+
+" Colors
+let color0  = "#23110f"
+let color1  = "#c04e41"
+let color2  = "#3fb7bc"
+let color3  = "#3a63ae"
+let color4  = "#6a51c5"
+let color5  = "#ca61c1"
+let color6  = "#c85959"
+let color7  = "#c8c3c3"
+let color8  = "#5a4c4b"
+let color9  = "#c04e41"
+let color10 = "#3fb7bc"
+let color11 = "#3a63ae"
+let color12 = "#6a51c5"
+let color13 = "#ca61c1"
+let color14 = "#c85959"
+let color15 = "#c8c3c3"

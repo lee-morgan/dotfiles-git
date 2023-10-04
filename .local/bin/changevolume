@@ -17,7 +17,7 @@ send_notification() {
 		icon="volume-amplified"
 	fi
 
-	dunstify -a "changevolume" -u low -r 9993 -h int:value:"$volume" -i "$icon" "Volume: ${volume}%" -t 2000
+	notify-send -a "changevolume" -u low -h int:value:"$volume" -h string:synchronous:prg -i "$HOME/.local/share/icons/$icon.png" "Volume" "Volume: $volume%"
 }
 
 case $1 in

@@ -5,7 +5,7 @@
 
 send_notification() {
 	brightness=$(printf "%.0f\n" "$(brillo -G)")
-	dunstify -a "changebrightness" -u low -r 9991 -h int:value:"$brightness" -i "brightness" "Brightness: $brightness%" -t 2000
+	notify-send -a "changebrightness" -u low -h int:value:"$brightness" -h string:synchronous:prg -i "$HOME/.local/share/icons/brightness.png" "Volume" "Volume: $brightness%"
 }
 
 case $1 in

@@ -3,13 +3,15 @@
   "positionX": "center",
   "positionY": "top",
   "layer": "top",
-  "control-center-layer": "top",
+  // "control-center-layer": "top",
+  "control-center-positionX": "right",
+  "control-center-positionY": "top",
   "layer-shell": true,
   "cssPriority": "user",
   "control-center-margin-top": 10,
   "control-center-margin-bottom": 10,
-  "control-center-margin-right": 0,
-  "control-center-margin-left": 0,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 10,
   "notification-2fa-action": true,
   "notification-inline-replies": true,
   "notification-icon-size": 64,
@@ -21,11 +23,11 @@
   "fit-to-screen": true,
   "relative-timestamps": true,
   "control-center-width": 500,
-  "control-center-height": 600,
+  "control-center-height": 700,
   "notification-window-width": 500,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
-  "transition-time": 200,
+  "transition-time": 100,
   "hide-on-clear": true,
   "hide-on-action": true,
   "script-fail-notify": true,
@@ -41,15 +43,32 @@
     }
   },
   "notification-visibility": {
-    "mute-spotify": {
-      "state": "muted",
+    "hide-spotify-from-cc": {
+      "state": "transient",
       "urgency": "Low",
       "app-name": "Spotify"
+    },
+    "hide-volume-from-cc": {
+      "state": "transient",
+      "urgency": "Low",
+      "app-name": "changevolume"
+    },
+    "hide-wallpaper-from-cc": {
+      "state": "transient",
+      "urgency": "Low",
+      "app-name": "changewallpaper"
+    },
+    "hide-brightness-from-cc": {
+      "state": "transient",
+      "urgency": "Low",
+      "app-name": "changebrightness"
     }
   },
   "widgets": [
     "inhibitors",
     "mpris",
+    "volume",
+    "brightness",
     "menubar",
     "title",
     "dnd",

@@ -1,0 +1,22 @@
+@define-color text-color-disabled {foreground};
+@define-color cc-bg alpha({background},0.8);
+@define-color noti-border-color {color6};
+
+@define-color noti-bg alpha({background},0.8);
+@define-color noti-bg-darker alpha({background},1);
+@define-color noti-bg-hover {color2};
+@define-color noti-bg-focus {color3};
+@define-color noti-close-bg  {color4};
+@define-color noti-close-bg-hover {color5};
+@define-color text-color #fff;
+@define-color bg-selected  {color7};
+
+
+@define-color color8 {color8};
+@define-color color9 {color9};
+@define-color color10 {color10};
+@define-color color11 {color11};
+@define-color color12 {color12};
+@define-color color13 {color13};
+@define-color color14 {color14};
+@define-color color15 {color15};

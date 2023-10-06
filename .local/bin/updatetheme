@@ -2,7 +2,7 @@
 
 new_wall=$(cat $HOME/.cache/wal/wal)
 swaync-client -rs
-sleep 0.1
-killall -SIGUSR2 waybar
+pkill waybar
 sleep 0.5
+waybar & 
 notify-send -a "changewallpaper" -u low -i $new_wall "Wallpaper changed" "Wallpaper and theme have been set to:\n '$new_wall'"

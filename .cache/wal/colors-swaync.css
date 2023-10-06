@@ -1,22 +1,22 @@
-@define-color text-color-disabled #c8c3c3;
-@define-color cc-bg alpha(#23110f,0.8);
-@define-color noti-border-color #c85959;
+@define-color text-color-disabled #c7c5c5;
+@define-color cc-bg alpha(#221919,0.8);
+@define-color noti-border-color #6b9acd;
 
-@define-color noti-bg alpha(#23110f,0.8);
-@define-color noti-bg-darker alpha(#23110f,1);
-@define-color noti-bg-hover #3fb7bc;
-@define-color noti-bg-focus #3a63ae;
-@define-color noti-close-bg  #6a51c5;
-@define-color noti-close-bg-hover #ca61c1;
+@define-color noti-bg alpha(#221919,0.8);
+@define-color noti-bg-darker alpha(#221919,1);
+@define-color noti-bg-hover #4cc35c;
+@define-color noti-bg-focus #4eaec4;
+@define-color noti-close-bg  #4285c0;
+@define-color noti-close-bg-hover #92b8da;
 @define-color text-color #fff;
-@define-color bg-selected  #c8c3c3;
+@define-color bg-selected  #c7c5c5;
 
 
-@define-color color8 #5a4c4b;
-@define-color color9 #c04e41;
-@define-color color10 #3fb7bc;
-@define-color color11 #3a63ae;
-@define-color color12 #6a51c5;
-@define-color color13 #ca61c1;
-@define-color color14 #c85959;
-@define-color color15 #c8c3c3;
+@define-color color8 #595252;
+@define-color color9 #ca6360;
+@define-color color10 #4cc35c;
+@define-color color11 #4eaec4;
+@define-color color12 #4285c0;
+@define-color color13 #92b8da;
+@define-color color14 #6b9acd;
+@define-color color15 #c7c5c5;
